@@ -1,0 +1,22 @@
+.navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 15px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+
+    .links {
+        display: flex;
+        gap: var(--default-spacing);
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.avatar {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

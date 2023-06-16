@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    gap: calc(var(--default-spacing) * 4);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.profileData {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.mainProfileData {
+    display: flex;
+    gap: calc(var(--default-spacing));
+    margin-bottom: calc(var(--default-spacing) * 2);
+}
+
+.optionalFields {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: var(--default-spacing);
+    border-radius: var(--default-border-radius);
+    gap: var(--default-spacing);
+}
+
+.optionalField {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg-color);
+    padding: var(--default-spacing);
+    border-radius: var(--default-border-radius);
+}
+
+.optionalFieldLabel {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}

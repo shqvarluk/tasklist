@@ -1,0 +1,50 @@
+.inputWrapper {
+    flex-basis: content;
+}
+
+.input {
+    box-sizing: border-box;
+    outline: none;
+    padding: var(--default-spacing);
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    transition: box-shadow 200ms ease-in;
+
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+        appearance: none;
+    }
+
+    &[type="number"] {
+        appearance: textfield;
+
+        &:hover,
+        &:focus {
+            appearance: none;
+        }
+    }
+
+    &:active
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: inset 0 0 0 2px var(--accent-color);
+    }
+
+    &:hover:not(&:active,&:focus) {
+        border: none;
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+}
+
+.readonly {
+    background-color: transparent;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.fullWidth {
+    width: 100%;
+}

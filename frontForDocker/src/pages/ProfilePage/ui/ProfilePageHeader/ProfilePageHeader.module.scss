@@ -1,0 +1,10 @@
+.profilePageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: var(--default-spacing);
+}
