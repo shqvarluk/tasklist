@@ -1,14 +1,11 @@
 package com.example.tasklist.repository.mapper;
 
-import com.example.tasklist.domain.task.Status;
 import com.example.tasklist.domain.task.Task;
 import com.example.tasklist.domain.user.Role;
 import com.example.tasklist.domain.user.User;
 import lombok.SneakyThrows;
 
 import java.sql.ResultSet;
-import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

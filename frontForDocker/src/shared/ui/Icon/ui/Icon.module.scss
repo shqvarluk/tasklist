@@ -1,9 +1,0 @@
-.icon {
-    display: flex;
-    gap: var(--default-spacing);
-    fill: var(--primary-color);
-
-    &:hover:not(&:active) {
-        fill: var(--inverted-primary-color);
-    }
-}

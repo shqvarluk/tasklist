@@ -31,7 +31,6 @@ public class TaskController {
         Task updatedTask = taskService.update(task);
         return taskMapper.toDto(updatedTask);
     }
-
     @GetMapping("/{id}")
     @Operation(summary = "Get TaskDto by id")
     @PreAuthorize("canAccessTask(#id)")
@@ -39,14 +38,10 @@ public class TaskController {
         Task task = taskService.getById(id);
         return taskMapper.toDto(task);
     }
-
     @DeleteMapping ("/{id}")
     @Operation(summary = "Delete task by id")
     @PreAuthorize("canAccessTask(#id)")
     public void deleteById(@PathVariable Long id){
         taskService.delete(id);
     }
-
-
-
 }
