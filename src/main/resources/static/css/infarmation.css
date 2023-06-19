@@ -1,0 +1,21 @@
+body {
+
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+p {
+    margin-bottom: 15px;
+}
+
+.information {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}

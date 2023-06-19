@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Профиль</title>
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 172, 172, 0.2);">
+        <a class="navbar-brand" href="Profile">Юзеров Юзер</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="About">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tasks">Доставки</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Профиль пользователя</h5>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name" value="Юзеров Юзер">
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="username" value="user">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Адрес</label>
+                        <input type="text" class="form-control" id="address" value="ул. Московская">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="text" class="form-control" id="phone" value="+0987654321">
+                    </div>
+                    <div class="mb-3">
+                        <label for="otherContact" class="form-label">Дополнительный контакт</label>
+                        <input type="text" class="form-control" id="otherContact" value="telegram: @user">
+                    </div>
+                    <div class="mb-3 text-center d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                        <form th:action="@{/logout}" method="post">
+                            <button type="submit" class="btn btn-secondary">Выйти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
