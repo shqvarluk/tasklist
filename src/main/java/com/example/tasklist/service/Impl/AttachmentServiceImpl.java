@@ -1,8 +1,8 @@
 package com.example.tasklist.service.Impl;
 
-import com.tasklist.domain.attachment.Attachment;
-import com.tasklist.repository.AttachmentRepository;
-import com.tasklist.service.AttachmentService;
+import com.example.tasklist.domain.attachment.Attachment;
+import com.example.tasklist.repository.AttachmentRepository;
+import com.example.tasklist.service.AttachmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

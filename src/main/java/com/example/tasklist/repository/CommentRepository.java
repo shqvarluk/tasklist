@@ -1,6 +1,6 @@
 package com.example.tasklist.repository;
 
-import com.tasklist.domain.comment.Comment;
+import com.example.tasklist.domain.comment.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

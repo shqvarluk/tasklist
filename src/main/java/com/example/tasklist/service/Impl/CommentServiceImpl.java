@@ -1,8 +1,8 @@
 package com.example.tasklist.service.Impl;
 
-import com.tasklist.domain.comment.Comment;
-import com.tasklist.repository.CommentRepository;
-import com.tasklist.service.CommentService;
+import com.example.tasklist.domain.comment.Comment;
+import com.example.tasklist.repository.CommentRepository;
+import com.example.tasklist.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
